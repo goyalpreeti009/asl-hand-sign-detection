@@ -1,12 +1,13 @@
 from ultralytics import YOLO
 
-# Load pre-trained YOLOv8n model
+# Load base model
 model = YOLO("models/yolov8n.pt")
 
-# Train on your custom ASL dataset
+# Train the model (adjust datasets/data.yaml to your exact path)
 model.train(
-    data="data/data.yaml",  # path to data.yaml
-    epochs=30,
-    imgsz=640,
-    batch=8
+    data="datasets/data.yaml", 
+    epochs=10,        # Lower to 5-10 if testing locally on CPU
+    imgsz=416,        # 416 runs significantly faster than 640 on CPU
+    batch=4,          # Lower batch size prevents CPU memory choke
+    workers=2
 )
