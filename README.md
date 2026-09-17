@@ -1,24 +1,27 @@
-# ASL YOLO Hand Gesture Recognition
+# ASL Hand Sign Detection with YOLOv8
 
-Real-time hand sign detection using YOLOv8 and OpenCV.
+Real-time American Sign Language (ASL) hand sign detection powered by **Ultralytics YOLOv8** and **OpenCV**.
 
-## Features
-- Real-time webcam detection
-- Trained on ASL dataset (extendable)
-- Python + OpenCV + Ultralytics YOLOv8
+---
 
-## Installation
-1. Clone the repository:
-https://github.com/goyalpreeti009/ASL-YOLO.git
-2. Go to the project folder:
-cd ASL-YOLO
-3. Install dependencies:
-pip install -r requirements.txt
+### Features
+* **Real-time Detection:** High-FPS live webcam inference.
+* **Pre-trained Weights:** Trained on standard ASL datasets with support for custom retraining.
+* **Lightweight:** Tested and optimized for CPU inference on standard PCs.
 
-## Usage
-Run the webcam detection:
-python scripts/detect_webcam.py
+---
 
-## Notes
-- Works on Python 3.10  
-- Tested on Windows with CPU version of PyTorch
+### Tech Stack
+* Python 3.10
+* Ultralytics YOLOv8
+* OpenCV
+* PyTorch (CPU / CUDA compatible)
+
+---
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/goyalpreeti009/asl-hand-sign-detection.git](https://github.com/goyalpreeti009/asl-hand-sign-detection.git)
+   cd asl-hand-sign-detection
